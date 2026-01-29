@@ -1,6 +1,8 @@
 # IoT MISO 2026
 
-Este proyecto contiene retos relacionados con IoT.
+Este proyecto contiene retos relacionados con IoT. Actualmente, incluye el siguiente reto:
+
+- [Reto 1: Sensor LDR](reto1/README.md)
 
 ## Configuración de credenciales
 

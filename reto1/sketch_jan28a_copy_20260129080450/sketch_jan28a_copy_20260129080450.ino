@@ -31,6 +31,8 @@ const char MQTT_SUB_TOPIC[] = HOSTNAME "/";
 const char MQTT_PUB_TOPIC1[] = "humedad/bogota/" HOSTNAME;
 //Tópico al que se enviarán los datos de temperatura
 const char MQTT_PUB_TOPIC2[] = "temperatura/bogota/" HOSTNAME;
+//Tópico al que se enviarán los datos de luminosidad
+const char MQTT_PUB_TOPIC3[] = "luminosidad/bogota/" HOSTNAME;
 
 //////////////////////////////////////////////////////
 
@@ -202,6 +204,26 @@ void loop()
   Serial.print(MQTT_PUB_TOPIC2);
   Serial.print(" -> ");
   Serial.println(payload2);
+
+  // Leer el valor del LDR
+  int ldrValue = analogRead(A0);
+
+  // Convertir el valor del LDR a lux aproximados
+  int lux = map(ldrValue, 0, 1023, 0, 1000);
+
+  // Transformar el valor de lux a JSON
+  String jsonLDR = "{\"value\": " + String(lux) + "}";
+  char payload3[jsonLDR.length() + 1];
+  jsonLDR.toCharArray(payload3, jsonLDR.length() + 1);
+
+  // Publicar el valor de lux en el tópico MQTT correspondiente
+  client.publish(MQTT_PUB_TOPIC3, payload3, false);
+
+  // Imprimir el valor de lux en el monitor serie
+  Serial.print(MQTT_PUB_TOPIC3);
+  Serial.print(" -> ");
+  Serial.println(jsonLDR);
+
   /*Espera 5 segundos antes de volver a ejecutar la función loop*/
   delay(5000);
 }
