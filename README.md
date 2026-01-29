@@ -1,4 +1,4 @@
-# IoT Project
+# IoT MISO 2026
 
 Este proyecto contiene retos relacionados con IoT.
 
