@@ -1,6 +1,6 @@
 # IoT Project
 
-Este proyecto contiene retos relacionados con IoT. Actualmente, incluye el reto1.
+Este proyecto contiene retos relacionados con IoT.
 
 ## Configuración de credenciales
 
