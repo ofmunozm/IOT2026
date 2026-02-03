@@ -1,4 +1,4 @@
-# Reto 1: Sensor LDR
+# Reto 1: Sensor LDR - Luminosidad
 
 ## Descripción
 

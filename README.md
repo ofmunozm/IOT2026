@@ -1,8 +1,9 @@
 # IoT MISO 2026
 
-Este proyecto contiene retos relacionados con IoT. Actualmente, incluye el siguiente reto:
+Este proyecto contiene retos relacionados con IoT. Actualmente, incluye los siguientes retos:
 
 - [Reto 1: Sensor LDR](reto1/README.md)
+- [Reto 2: Simulación de redes de sensores IoT con CupCarbon](reto2/README.md)
 
 ## Configuración de credenciales
 
@@ -19,4 +20,5 @@ Para configurar las credenciales necesarias para la conexión, sigue estos pasos
 
 ## Estructura del proyecto
 
-- `reto1/`: Contiene el código fuente del primer reto.
+- `reto1/`: Código fuente del primer reto (sensor LDR con MQTT).
+- `reto2/`: Proyecto de simulación de redes de sensores IoT con CupCarbon (Zigbee, WiFi, LoRa).
