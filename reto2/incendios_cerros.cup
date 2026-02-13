@@ -2,8 +2,8 @@ CupCarbon v. Klines 7.2
 ----------------
 name:incendios_cerros
 zoom:2
-centerposition_la:4.599744196256966
-centerposition_lo:285.93722999095917
+centerposition_la:4.599535658234747
+centerposition_lo:285.93728363513947
 map:1
 display_details:true
 draw_radio_links:true
@@ -11,7 +11,7 @@ draw_sensor_arrows:true
 radio_links_color:3
 draw_marker_arrows:false
 display_rl_distance:false
-propagation:true
+propagation:false
 display_marker_distance:false
 display_radio_messages:true
 draw_script_file_name:true

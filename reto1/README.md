@@ -38,3 +38,16 @@ En este reto, se implementó un sensor LDR para medir la luminosidad y transmiti
 
 - Los valores de luminosidad se envían al servidor MQTT y se imprimen en el monitor serie.
 - Los valores en lux varían según la intensidad de luz que incide sobre el sensor.
+
+## Configuración de credenciales
+
+Para configurar las credenciales necesarias para la conexión, sigue estos pasos:
+
+1. Copia el archivo `secrets_example.h` y renómbralo como `secrets.h`.
+2. Llena los valores de las credenciales en `secrets.h`:
+   - `ssid`: Nombre de tu red WiFi.
+   - `pass`: Contraseña de tu red WiFi.
+   - `MQTT_USER`: Usuario para la conexión MQTT.
+   - `MQTT_PASS`: Contraseña para la conexión MQTT.
+
+**Nota:** El archivo `secrets.h` no se sube al repositorio por razones de seguridad.

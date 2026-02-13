@@ -6,7 +6,7 @@ atget id id
 getpos2 lonSen latSen
 
 loop
-wait 1
+wait 3
 read mens
 rdata mens tipo valor
 
@@ -28,7 +28,7 @@ if(tipo=="stop")
    stop
 end
 
-delay 1
+delay 3
 
 areadsensor tempSen
 rdata tempSen SensTipo idSens temp
@@ -49,8 +49,8 @@ if( temp>30)
 end
 
 battery bat
-if(bat<5)
-   data mens "critico" id lonSen latSen
+if(bat<0.5)
+   data mens "critico" id 0 lonSen latSen
    send mens ant
    wait 1000
    stop
