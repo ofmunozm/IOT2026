@@ -31,7 +31,7 @@
           </elementProp>
           <elementProp name="consulta_url" elementType="Argument">
             <stringProp name="Argument.name">consulta_url</stringProp>
-            <stringProp name="Argument.value">/topStations?measurement=temperatura&amp;start=2021-07-01&amp;end=2021-07-31&amp;top=5</stringProp>
+            <stringProp name="Argument.value">/topStations?measurement=Temperatura&amp;start=2021-07-01&amp;end=2021-07-31&amp;top=5</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

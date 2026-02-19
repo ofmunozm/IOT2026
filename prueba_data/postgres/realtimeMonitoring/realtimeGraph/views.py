@@ -689,7 +689,7 @@ def top_stations(request):
             time__date__gte=start,
             time__date__lte=end
         )
-        .values('station__id', 'station__name', 'station__location__city__name')
+        .values('station__id', 'station__user__login', 'station__location__city__name')
         .annotate(
             avg_value=Avg('value'),
             min_value=Min('value'),
@@ -702,7 +702,7 @@ def top_stations(request):
     data = [
         {
             "station_id":   r['station__id'],
-            "station_name": r['station__name'],
+            "station_name": r['station__user__login'],
             "city":         r['station__location__city__name'],
             "measurement":  measurement_name,
             "avg_value":    round(r['avg_value']    or 0, 2),
