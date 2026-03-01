@@ -1,0 +1,4 @@
+ubuntu@ip-10-0-92-163:~/ssl$ cat /etc/mosquitto/acl.txt
+pattern readwrite +/+/+/%u
+user admin
+topic readwrite #
