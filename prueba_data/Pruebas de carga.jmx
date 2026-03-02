@@ -7,19 +7,20 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
     </TestPlan>
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables">
         <collectionProp name="Arguments.arguments">
           <elementProp name="ip_postgres" elementType="Argument">
             <stringProp name="Argument.name">ip_postgres</stringProp>
-            <stringProp name="Argument.value">13.221.107.22</stringProp>
+            <stringProp name="Argument.value">107.21.83.114</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Dirección IP pública de la máquina EC2 con el servidor de postgres</stringProp>
           </elementProp>
           <elementProp name="ip_timescale" elementType="Argument">
             <stringProp name="Argument.name">ip_timescale</stringProp>
-            <stringProp name="Argument.value">13.221.107.22</stringProp>
+            <stringProp name="Argument.value">3.90.69.26</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Dirección IP pública de la máquina EC2 con el servidor de timescale</stringProp>
           </elementProp>
@@ -38,7 +39,7 @@
         <stringProp name="TestPlan.comments">Editar según los datos de su despliegue</stringProp>
       </Arguments>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Postgres">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Postgres" enabled="true">
         <intProp name="ThreadGroup.num_threads">60</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -137,7 +138,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Timescale">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Timescale" enabled="true">
         <intProp name="ThreadGroup.num_threads">60</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -198,7 +199,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
