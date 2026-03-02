@@ -6,3 +6,4 @@ Este proyecto contiene retos relacionados con IoT. Actualmente, incluye los sigu
 - [Reto 2: Simulación de redes de sensores IoT con CupCarbon](reto2/README.md)
 - [Reto 3: MQTT y Escalabilidad](reto3/README.md)
 - [Reto 4: Capa de Datos IoT](reto4/README.md)
+- [Reto 5: Capa de Aplicación - Lógica](reto5/README.md)
